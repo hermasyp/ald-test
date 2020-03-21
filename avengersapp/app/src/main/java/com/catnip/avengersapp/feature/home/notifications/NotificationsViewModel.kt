@@ -1,4 +1,4 @@
-package com.catnip.avengersapp.feature.home.ui.notifications
+package com.catnip.avengersapp.feature.home.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

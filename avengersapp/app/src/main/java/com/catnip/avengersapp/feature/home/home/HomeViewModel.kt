@@ -1,4 +1,4 @@
-package com.catnip.avengersapp.feature.home.ui.home
+package com.catnip.avengersapp.feature.home.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

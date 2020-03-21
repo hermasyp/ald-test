@@ -1,4 +1,4 @@
-package com.catnip.avengersapp.feature.home.ui.dashboard
+package com.catnip.avengersapp.feature.home.dashboard
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

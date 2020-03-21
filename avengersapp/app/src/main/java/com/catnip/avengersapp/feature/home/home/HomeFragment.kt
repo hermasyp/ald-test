@@ -1,4 +1,4 @@
-package com.catnip.avengersapp.feature.home.ui.home
+package com.catnip.avengersapp.feature.home.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
