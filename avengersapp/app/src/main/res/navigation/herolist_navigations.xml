@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
+    android:id="@+id/herolist_navigations"
     app:startDestination="@+id/navigation_herolist">
 
     <fragment
@@ -11,9 +11,4 @@
         android:label="@string/title_menu_hero_list"
         tools:layout="@layout/fragment_hero_list" />
 
-    <fragment
-        android:id="@+id/navigation_profile"
-        android:name="com.catnip.avengersapp.feature.main.profile.ProfileFragment"
-        android:label="@string/title_menu_profile"
-        tools:layout="@layout/fragment_profile" />
 </navigation>

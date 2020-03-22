@@ -1,14 +1,22 @@
 package com.catnip.avengersapp.data.model
 
+import com.google.gson.annotations.SerializedName
+
 /**
 Written with love by Muhammad Hermas Yuda Pamungkas
 Github : https://github.com/hermasyp
  **/
 
-data class Hero(val name: String, val desc: String, val imgPath: List<String>)
+data class Hero(
+    @SerializedName("name")
+    val name: String,
+    @SerializedName("description")
+    val description: String,
+    @SerializedName("images")
+    val images: List<String>)
 
-
-
-object HeroGenerator{
-
-}
+data class Heroes(
+    @SerializedName("success")
+    val success: Boolean,
+    @SerializedName("data")
+    val heroes: List<Hero>)

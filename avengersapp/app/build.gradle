@@ -20,6 +20,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions 'default'
+
+    productFlavors {
+        production {
+            dimension = 'default'
+            buildConfigField("String", "BASE_URL", "\"https://www.mocky.io/v2/\"")
+
+        }
+        stagging {
+            dimension = 'default'
+            buildConfigField("String", "BASE_URL", "\"https://www.mocky.io/v2/\"")
+
+        }
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -49,10 +63,15 @@ dependencies {
     implementation deps.navigation.ui
     implementation deps.navigation.fragmentKtx
     implementation deps.navigation.uiKtx
+    implementation deps.rxjava.core
+    implementation deps.rxjava.rxAndroid
+    implementation deps.gson.gson
+    implementation deps.retrofit.retrofit
+    implementation deps.retrofit.retrofitGson
+    implementation deps.retrofit.retrofitRx
+    implementation deps.retrofit.retrofitOkhttpLogging
     implementation deps.coil.coil
     implementation deps.android_test.junit
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     androidTestImplementation deps.android_test.androidJunit
     androidTestImplementation deps.android_test.espressoCore
 

@@ -15,4 +15,6 @@
     <string name="txt_subtitle_splashscreen">Alodokter Test App</string>
     <string name="txt_sucess_login">Login Success !</string>
     <string name="txt_error_login">Login Failed !</string>
+    <string name="txt_button_logout">Logout</string>
+    <string name="txt_error_get_data">Failed to get data</string>
 </resources>

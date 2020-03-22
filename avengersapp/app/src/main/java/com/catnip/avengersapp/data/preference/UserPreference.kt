@@ -14,6 +14,7 @@ class UserPreference(context: Context) {
         private const val NAME = "UserPreference"
         private const val MODE = Context.MODE_PRIVATE
         private val IS_LOGIN_PREF = Pair("IS_LOGIN", false)
+        private val USERNAME_PREF = Pair("USERNAME", null)
     }
 
     init {
@@ -23,6 +24,12 @@ class UserPreference(context: Context) {
         get() = preference.getBoolean(IS_LOGIN_PREF.first, IS_LOGIN_PREF.second)
         set(value) = preference.edit {
             it.putBoolean(IS_LOGIN_PREF.first, value)
+        }
+
+    var username: String?
+        get() = preference.getString(USERNAME_PREF.first, USERNAME_PREF.second)
+        set(value) = preference.edit {
+            it.putString(USERNAME_PREF.first, value)
         }
 }
 

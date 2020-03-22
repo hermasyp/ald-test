@@ -39,6 +39,7 @@ class LoginActivity : AppCompatActivity() {
             if (it) {
                 Toast.makeText(this, getString(R.string.txt_sucess_login), Toast.LENGTH_SHORT).show()
                 userPreference.isLoggedIn = true
+                userPreference.username = et_username?.text?.trim().toString()
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }else{
