@@ -41,6 +41,7 @@ versions.legacysupport = '1.0.0'
 versions.scalable = '1.0.6'
 versions.lifecycle = '2.1.0'
 versions.navigation = '2.2.1'
+versions.autoimageslider = '1.3.5'
 
 
 //end of versions
@@ -113,6 +114,10 @@ deps.gson = gson
 def coil = [:]
 coil.coil = "io.coil-kt:coil:$versions.coil"
 deps.coil = coil
+
+def autoimageslider = [:]
+autoimageslider.imgSlider = "com.github.smarteist:autoimageslider:$versions.autoimageslider"
+deps.autoimageslider = autoimageslider
 
 def scalable = [:]
 scalable.ssp = "com.intuit.ssp:ssp-android:$versions.scalable"

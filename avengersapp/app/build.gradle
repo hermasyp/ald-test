@@ -71,7 +71,9 @@ dependencies {
     implementation deps.retrofit.retrofitRx
     implementation deps.retrofit.retrofitOkhttpLogging
     implementation deps.coil.coil
+    implementation deps.autoimageslider.imgSlider
     implementation deps.android_test.junit
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     androidTestImplementation deps.android_test.androidJunit
     androidTestImplementation deps.android_test.espressoCore
 

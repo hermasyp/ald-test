@@ -17,6 +17,8 @@ Github : https://github.com/hermasyp
 interface RetrofitApi {
     //TODO : api interface will written in here.
 
+
+    //I made this static response api to do my task
     @GET("5e77174c3300002400099ed2")
     fun getHeroes(): Single<Heroes>
 

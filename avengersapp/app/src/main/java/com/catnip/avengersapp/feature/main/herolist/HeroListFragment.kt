@@ -5,11 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.catnip.avengersapp.R
+import com.catnip.avengersapp.feature.detail.DetailHeroDialogFragment
 import com.catnip.avengersapp.utils.result.ResultState
 import kotlinx.android.synthetic.main.fragment_hero_list.*
 
@@ -55,8 +57,8 @@ class HeroListFragment : Fragment() {
 
     private fun setupViews(){
         adapterList = HeroesAdapterList {
-            Toast.makeText(context,it.name, Toast.LENGTH_SHORT).show()
-
+            val df = DetailHeroDialogFragment.newInstance(it)
+            df.show(childFragmentManager,null)
         }
         rv_hero?.apply {
             layoutManager = LinearLayoutManager(context)
