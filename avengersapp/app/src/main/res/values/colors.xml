@@ -296,8 +296,11 @@
     <color name="md_blue_grey_900">#263238</color>
 
 
-
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <!--Styling-->
+    <color name="colorPrimary">@color/md_grey_900</color>
+    <color name="colorPrimaryDark">@color/md_black_1000</color>
+    <color name="colorAccent">@color/md_yellow_700</color>
+    <color name="textColor">@color/md_white_1000</color>
+    <color name="backgroundColor">@color/md_grey_800</color>
+    <color name="cardBackgroundColor">@color/md_grey_900</color>
 </resources>

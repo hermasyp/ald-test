@@ -1,10 +1,10 @@
-package com.catnip.avengersapp.feature.home.dashboard
+package com.catnip.avengersapp.feature.main.herolist
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class DashboardViewModel : ViewModel() {
+class HeroListViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is dashboard Fragment"
