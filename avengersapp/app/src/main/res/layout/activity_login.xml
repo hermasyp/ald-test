@@ -23,6 +23,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_16sdp">
+            <TextView
+                android:id="@+id/tv_title_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_title_splashscreen"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
+                android:textAlignment="center"
+                android:textSize="@dimen/_24ssp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv_subtitle_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_subtitle_splashscreen"
+                android:textAlignment="center"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_login" />
+
 
             <EditText
                 android:id="@+id/et_username"
@@ -32,7 +56,7 @@
                 android:layout_marginTop="@dimen/_8sdp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@id/tv_subtitle_login" />
 
             <EditText
                 android:id="@+id/et_password"
