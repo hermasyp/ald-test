@@ -58,7 +58,7 @@ class DetailHeroDialogFragment : DialogFragment() {
         imageSlider.indicatorSelectedColor = Color.WHITE;
         imageSlider.indicatorUnselectedColor = Color.GRAY;
         imageSlider.scrollTimeInSec = 3;
-        imageSlider.isAutoCycle = false;
+        imageSlider.isAutoCycle = true;
         hero?.let {
             imageSlider.startAutoCycle()
             tv_hero_name?.text = it.name

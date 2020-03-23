@@ -35,7 +35,6 @@ class ImageSliderAdapter() :
             itemView.iv_auto_image_slider
                 .load(item) {
                     crossfade(true)
-                    scale(Scale.FIT)
                     placeholder(R.drawable.ic_placeholder)
                     error(R.drawable.ic_placeholder)
                 }
